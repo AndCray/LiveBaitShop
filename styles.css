@@ -1,0 +1,252 @@
+:root {
+		--b: rgba(255, 255, 255, 0.5);
+		--t: #000;
+		--bt: #FFF;
+	}
+/* Basic text setup */ 
+body, html { 
+	margin: 0; 
+	padding: 0; 
+	height: 100%; 
+	overflow-x: hidden; 
+	font-family: Arial, sans-serif; 
+} 
+	
+/* Setup for the video background */ 
+.video-container { 
+	position: fixed; 
+	top: 0; 
+	left: 0; 
+	width: 125%; 
+	height: 125%; 
+	z-index: -1; 
+	/* Places the video behind other content */ 
+	overflow: hidden; 
+} 
+.video-container iframe { 
+	position: absolute; 
+	top: 50%; 
+	left: 50%; 
+	width: 125%; 
+	height: 125%; 
+	transform: translate(-50%, -50%); 
+	pointer-events: none; /* Prevent interaction with the iframe */ 
+} 
+	
+/* Puts the website content in front of the video */ 
+.content { 
+	position: relative; 
+	z-index: 1; /* Places the content above the video */ 
+	color: var(--bt); 
+	text-align: center; 
+	padding: 20px; 
+} 
+	
+/* Setup for the header section and other portions of text */ 
+h1 { 
+	color: #32CD32; 
+	font-size: 50pt; 
+} 
+.banner-container { 
+	position: relative; 
+	width: 100%; 
+	height: 200px; /* Adjust the height to make the banner thicker or thinner */ 
+	overflow: hidden; 
+} 
+.banner-image { 
+	width: 100%; 
+	height: auto; 
+	position: absolute; 
+	top: 50%; 
+	transform: translateY(-50%); 
+} 
+.image-wrapper { 
+	position: relative; 
+	display: inline-block; 
+}
+.text-overlay { 
+	position: absolute; 
+	top: 5%; 
+	left: 0%; 
+	width: 100%; 
+	height: 100%;
+	text-align: left; 
+	padding: 20px; 
+	border-radius: 10px; 
+} 
+.text-overlay h1 { 
+	margin: 0; 
+	font-size: 2em; 
+} 
+.text-overlay p { 
+	margin: 5px 0 0; 
+	font-size: 1.2em; 
+	color: var(--bt);
+} 
+.text-overlay h3, h4 {
+	margin: 5px 0 0;
+	font-size: 1em;
+	display: flex; 
+	justify-content: center; 
+	align-items: center;
+	box-sizing: border-box;
+}
+.text-overlay h3 {
+	margin: 4px 0 0;
+}
+.text-overlay h2 {
+	color: var(--bt);
+	font-size: 14pt;
+}
+.text-overlay li {
+	margin: 20px 0 0;
+	font-size: 1.25em;
+	display: flex; 
+	justify-content: flex-end; 
+	align-items: flex-start;
+	box-sizing: border-box;
+	color: #32CD32;
+	padding-right: 25px;
+}
+.center { 
+	text-align: center; 
+	align-content: center; 
+} 
+
+/* Setup for images in a column */ 
+.image-column { 
+	display: flex; 
+	flex-direction: column; 
+	align-items: center; 
+} 
+.image-column img { 
+	max-width: 100%; 
+	margin: 10px 0; 
+} 
+	footer { 
+	position: relative; 
+	z-index: 1; 
+	text-align: center; 
+	padding: 10px; 
+	background-color: #333; 
+	color: var(--bt); 
+}
+
+/*Table Setup*/
+.layout-table { 
+	width: 100%; 
+	border-collapse: collapse; 
+} 
+.layout-table td { 
+	padding: 10px; 
+	vertical-align: top; 
+} 
+	/* Styling for left column */ 
+.column-left { 
+	width: 25%;
+} 
+.column-left .section {  
+	padding: 10px 0; 
+	background-color: var(--b);
+} 
+	/* Styling for right column */ 
+.column-right { 
+	width: 25%
+} 
+.column-right .section { 
+	height: 100%; 
+	display: flex; 
+	align-items: right; 
+	justify-content: center; 
+	background-color: var(--b); 
+}
+
+/* Basic table styling */ 
+.product-table { 
+	width: 100%; 
+	border-collapse: collapse; 
+	margin: 10px 0; 
+	font-family: Arial, sans-serif; 
+} 
+.product-table th, .product-table td { 
+	padding: 10px; 
+	text-align: left; 
+	vertical-align: top; 
+} 
+.product-table th { 
+	background-color: var(--b);
+	color: var(--t); 
+} 
+.product-table td { 
+	background-color: var(--b);
+	color: var(--t); 
+}
+/* Styling for the table overlay */ 
+.table-overlay { 
+	position: absolute; 
+	top: 10%;
+	left: 10%; 
+	width: 80%;
+	height: auto;
+	overflow: hidden; 
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+	padding: 10px; 
+	box-sizing: border-box; 
+	background-color: var(--b);
+}
+
+.prices{
+	font-size: 12pt;
+}
+
+/* Styling for the Facebook logo */ 
+.facebook-logo { 
+	width: 40px; 
+	height: auto; 
+	position: absolute; 
+	bottom: 35px; 
+	right: 10px; 
+} 
+/* Styling for the Facebook logo */ 
+.facebook-logo { 
+	width: 40px; 
+	height: auto; 
+	
+} /* Styling for the text overlay */ 
+.fb_overlay { 
+	position: absolute; 
+	color: var(--t);
+	bottom: 10px; 
+	right: 10px; 
+	display: flex; 
+	flex-direction: column; 
+	align-items: flex-end; 
+	padding: 10px; 
+	box-sizing: border-box; 
+	border-radius: 10px;  
+	text-align: right; 
+}
+
+/*Other services style*/
+.otherServ{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 10px;
+	text-align: left;
+}
+.otherServ h1 {
+	font-size: 20pt;
+	color: var(--bt);
+}
+.otherServ h2 {
+	font-size: 16pt;
+}
+.otherServ p {
+	font-size: 12pt;
+}
